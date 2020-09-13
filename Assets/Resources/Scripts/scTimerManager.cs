@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class scTimerManager : MonoBehaviour
 {
     private Text gameTimerText;
-    private float countDown = 15;
+    private float countDown;
     // Start is called before the first frame update
     void Start()
     {
+        countDown = 15;
         foreach (Transform child in transform)
         {
             if(child.name == "TimerText")
@@ -20,20 +21,29 @@ public class scTimerManager : MonoBehaviour
         }
     }
 
+    public void RestartCounter()
+    {
+        countDown = 15;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        countDown -= Time.deltaTime;
-
-        int seconds = (int)(countDown);
-
-        string timerText = string.Format("Timer : {0}", seconds);
-
-        gameTimerText.text = timerText;
-
-        if(countDown < 0)
+        if(scGameManager.instance.stateGame == 1)
         {
-            // lose
+            countDown -= Time.deltaTime;
+
+            int seconds = (int)(countDown);
+
+            string timerText = string.Format("Tiempo : {0}", seconds);
+
+            gameTimerText.text = timerText;
+
+            if (countDown < 0)
+            {
+                scGameManager.instance.stateGame = 4;
+            }
         }
+        
     }
 }

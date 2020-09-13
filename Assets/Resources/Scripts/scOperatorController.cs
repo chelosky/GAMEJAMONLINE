@@ -9,6 +9,7 @@ public class scOperatorController : MonoBehaviour
     private float MGWidth = Screen.width / 5f, MGHeight = Screen.width / 5f; // Magnify glass width and height
     private Vector3 mousePos;
 	private bool cameraActive;
+	private bool canShoot;
 
 	public static scOperatorController instance;
 
@@ -27,6 +28,7 @@ public class scOperatorController : MonoBehaviour
 
 	void Start()
     {
+		canShoot = true;
 		cameraActive = false;
 		createMagnifyGlass();
     }
@@ -34,6 +36,10 @@ public class scOperatorController : MonoBehaviour
 	public void UpdateStateCamera(bool state)
     {
 		cameraActive = state;
+        if (cameraActive)
+        {
+			canShoot = true;
+        }
 		magnifyCamera.enabled = cameraActive;
 
 	}
@@ -47,6 +53,38 @@ public class scOperatorController : MonoBehaviour
 		magnifyCamera.transform.position = mousePos;
 		mousePos.z = 0;
 		//magnifyBorders.transform.position = mousePos;
+		if (Input.GetMouseButtonDown(0) && canShoot && scGameManager.instance.stateGame == 1)
+		{
+			canShoot = false;
+			scGameManager.instance.PlayASound("fire");
+			Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+			RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
+			for (int i=0; i < hits.Length; i++)
+            {
+                if (hits[i].transform.gameObject.tag == "Person")
+                {
+					scGameManager.instance.PlayASound("death");
+					hits[i].transform.GetComponent<scRandomGenerateCharacter>().DeathPerson();
+                    if (hits[i].transform.gameObject.GetComponent<scRandomGenerateCharacter>().GetPerson().esObjetivo)
+                    {
+						scGameManager.instance.stateGame = 2;
+                    }
+                    else
+                    {
+						scGameManager.instance.stateGame = 3;
+					}
+					break;
+				}
+			}
+			StartCoroutine("Reload");
+		}
+	}
+
+	IEnumerator Reload()
+    {
+		yield return new WaitForSeconds(1f);
+		canShoot = true;
 	}
 
 	// Following method creates MagnifyGlass

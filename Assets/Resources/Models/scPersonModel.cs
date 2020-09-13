@@ -10,6 +10,7 @@ public class scPersonModel
     public int ojosPerson;
     public int peloPerson;
     public Sprite spBase, spCara, spPelo, spRopa;
+    public bool esObjetivo;
 
     public scPersonModel(int sexoPerson, int basePerson, int ojosPerson , int ropaPerson, int peloPerson, Sprite spBase, Sprite spCara, Sprite spPelo, Sprite spRopa)
     {
@@ -22,6 +23,7 @@ public class scPersonModel
         this.spCara = spCara;
         this.spPelo = spPelo;
         this.spRopa = spRopa;
+        this.esObjetivo = false;
     }
 
     public string GetSexoString()

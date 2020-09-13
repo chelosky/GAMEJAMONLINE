@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Character
   - Map
+  - Person
+  - IconosUI
+  - UIGAMEINFO
+  - WinnerUI
+  - LoseUI
+  - TimeOutUI
   layers:
   - Default
   - TransparentFX
@@ -19,7 +25,7 @@ TagManager:
   - Pelo
   - Ropa
   - Base
-  - 
+  - Map
   - 
   - 
   - 

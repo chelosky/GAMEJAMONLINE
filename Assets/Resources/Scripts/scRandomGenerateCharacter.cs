@@ -9,8 +9,11 @@ public class scRandomGenerateCharacter : MonoBehaviour
 
     void Start()
     {
-        //GetAllSpritePerson();
-        //GenerateARandomPerson();
+    }
+
+    public scPersonModel GetPerson()
+    {
+        return person;
     }
 
     public void SetPersonModel(scPersonModel personM) {
@@ -51,6 +54,27 @@ public class scRandomGenerateCharacter : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void DeathPerson()
+    {
+        foreach (Transform child in transform)
+        {
+            switch (child.name)
+            {
+                case "Cara":
+                case "Ropa":
+                case "Pelo":
+                    child.gameObject.SetActive(false);
+                    break;
+                case "Base":
+                    SetChildSprite(child, scGameManager.instance.GetDeathAnimation());
+                    transform.GetComponent<scMovementPerson>().DeathPerson();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
 

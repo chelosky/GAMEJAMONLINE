@@ -14,6 +14,7 @@ public class scMovementPerson : MonoBehaviour
     private float waitCounter;
     private float offSet;
     private float walkSpeed;
+    public bool isAlive;
 
     private int[] directionMov = new int[] { -1, 0 , 1 };
     private Vector3 vecDirection;
@@ -21,6 +22,7 @@ public class scMovementPerson : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isAlive = true;
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         walkSpeed = 2f;
@@ -35,38 +37,47 @@ public class scMovementPerson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (bWalking)
+        if (isAlive)
         {
-            walkCounter -= Time.deltaTime;
-
-            if(walkCounter < 0)
+            if (bWalking)
             {
-                bWalking = false;
-                waitCounter = waitTime;
-            }
+                walkCounter -= Time.deltaTime;
 
-            //rb2D.velocity = vecDirection;
-            if(Vector2.Distance(rb2D.position, vecDirection) > offSet)
-            {
-                rb2D.position = Vector2.MoveTowards(rb2D.position, vecDirection, walkSpeed * Time.deltaTime);
+                if (walkCounter < 0)
+                {
+                    bWalking = false;
+                    waitCounter = waitTime;
+                }
+
+                //rb2D.velocity = vecDirection;
+                if (Vector2.Distance(rb2D.position, vecDirection) > offSet)
+                {
+                    rb2D.position = Vector2.MoveTowards(rb2D.position, vecDirection, walkSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    bWalking = false;
+                    waitCounter = waitTime;
+                }
             }
             else
             {
-                bWalking = false;
-                waitCounter = waitTime;
+                waitCounter -= Time.deltaTime;
+                //rb2D.velocity = Vector2.zero;
+                if (waitCounter < 0)
+                {
+                    ChooseDirection();
+                }
             }
+            animator.SetBool("bWalking", bWalking);
         }
-        else
-        {
-            waitCounter -= Time.deltaTime;
-            //rb2D.velocity = Vector2.zero;
-            if(waitCounter < 0)
-            {
-                ChooseDirection();
-            }
-        }
-        animator.SetBool("bWalking", bWalking);
         SortLayerPerson(rb2D.position.y);
+    }
+
+    public void DeathPerson()
+    {
+        isAlive = false;
+        animator.SetBool("bDeath", true);
     }
 
     void ChooseDirection()
