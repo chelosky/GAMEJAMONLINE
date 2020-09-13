@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class scGameManager : MonoBehaviour
@@ -40,7 +41,7 @@ public class scGameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
         }
         else
         {
@@ -135,7 +136,7 @@ public class scGameManager : MonoBehaviour
             case 6: //wait lose
                 if (Input.GetMouseButtonDown(0))
                 {
-                    // BACK TO MENU
+                    SceneManager.LoadScene("Menu");
                 }
                 break;
             case 7: // clean game
