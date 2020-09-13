@@ -11,6 +11,36 @@ TextureImporter:
   - first:
       213: 1232863199752228085
     second: spShPeloMujer_2
+  - first:
+      213: -1328961516231971884
+    second: spShPeloMujer_0
+  - first:
+      213: -5890499842481406088
+    second: spShPeloMujer_1
+  - first:
+      213: 7738116825603217052
+    second: spShPeloMujer_2
+  - first:
+      213: -5178524419213410017
+    second: spShPeloMujer_3
+  - first:
+      213: -4378120681660687428
+    second: spShPeloMujer_4
+  - first:
+      213: -7320142986833364460
+    second: spShPeloMujer_5
+  - first:
+      213: 8215383372341614623
+    second: spShPeloMujer_6
+  - first:
+      213: 8476262324839017163
+    second: spShPeloMujer_7
+  - first:
+      213: 7995935361813829352
+    second: spShPeloMujer_8
+  - first:
+      213: -7080156078936526736
+    second: spShPeloMujer_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -150,6 +180,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db24d8ca849e8de0800000000000000
+      internalID: -1328961516231971884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fb66b3a9db04ea0800000000000000
+      internalID: -5890499842481406088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c969d8c2140536b60800000000000000
+      internalID: 7738116825603217052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11491c4a7f2228b0800000000000000
+      internalID: -5178524419213410017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -160,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f640ed61329c3be00800000000000000
-      internalID: 1059411489906885743
+      spriteID: cbbd2d1bf6acd33c0800000000000000
+      internalID: -4378120681660687428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spShPeloMujer_1
+      name: spShPeloMujer_5
       rect:
         serializedVersion: 2
         x: 32
@@ -181,14 +295,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09df0de5c452a6b0800000000000000
-      internalID: -5286569803517011702
+      spriteID: 41afabcbcb0a96a90800000000000000
+      internalID: -7320142986833364460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spShPeloMujer_2
+      name: spShPeloMujer_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18921276a7e20270800000000000000
+      internalID: 8215383372341614623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca6e0fdcabb1a570800000000000000
+      internalID: 8476262324839017163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_8
       rect:
         serializedVersion: 2
         x: 0
@@ -202,8 +358,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc02e55c820c1110800000000000000
-      internalID: 1232863199752228085
+      spriteID: 8e6d5e7e8d447fe60800000000000000
+      internalID: 7995935361813829352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloMujer_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0707aa8fe8b3ebd90800000000000000
+      internalID: -7080156078936526736
       vertices: []
       indices: 
       edges: []

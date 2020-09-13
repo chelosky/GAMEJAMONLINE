@@ -14,6 +14,30 @@ TextureImporter:
   - first:
       213: -2196565035435067052
     second: spShPeloHombre_3
+  - first:
+      213: -1258209038926635490
+    second: spShPeloHombre_0
+  - first:
+      213: -7322239910392656902
+    second: spShPeloHombre_1
+  - first:
+      213: 7369724959607480744
+    second: spShPeloHombre_2
+  - first:
+      213: 6823464371099205904
+    second: spShPeloHombre_3
+  - first:
+      213: -4467595258801704024
+    second: spShPeloHombre_4
+  - first:
+      213: -7280908983271153960
+    second: spShPeloHombre_5
+  - first:
+      213: 8076198644872817243
+    second: spShPeloHombre_6
+  - first:
+      213: -1835743908978427097
+    second: spShPeloHombre_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,6 +177,69 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e979d9b81f98ee0800000000000000
+      internalID: -1258209038926635490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloHombre_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb8bdca89d226a90800000000000000
+      internalID: -7322239910392656902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloHombre_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1ebb5edc5864660800000000000000
+      internalID: 7369724959607480744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloHombre_3
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -163,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d534fb2cda82330800000000000000
-      internalID: 3686387346946874640
+      spriteID: 01107e871b0d1be50800000000000000
+      internalID: 6823464371099205904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spShPeloHombre_1
+      name: spShPeloHombre_4
       rect:
         serializedVersion: 2
         x: 32
@@ -184,14 +271,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e0e14b52fca1300800000000000000
-      internalID: 223718892350869125
+      spriteID: 8a3b7ee48c9eff1c0800000000000000
+      internalID: -4467595258801704024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spShPeloHombre_2
+      name: spShPeloHombre_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de1c2a0bd305fa90800000000000000
+      internalID: -7280908983271153960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spShPeloHombre_6
       rect:
         serializedVersion: 2
         x: 0
@@ -205,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f881fb6c88cf2b0800000000000000
-      internalID: -5549410253636333688
+      spriteID: b5aa223c0eb641070800000000000000
+      internalID: 8076198644872817243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spShPeloHombre_3
+      name: spShPeloHombre_7
       rect:
         serializedVersion: 2
         x: 32
@@ -226,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45979d8fcbb3481e0800000000000000
-      internalID: -2196565035435067052
+      spriteID: 72bf0c614a02686e0800000000000000
+      internalID: -1835743908978427097
       vertices: []
       indices: 
       edges: []
