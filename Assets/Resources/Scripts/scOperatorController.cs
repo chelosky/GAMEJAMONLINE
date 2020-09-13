@@ -5,8 +5,8 @@ using UnityEngine;
 public class scOperatorController : MonoBehaviour
 {
     private Camera magnifyCamera;
-    private float MGOX, MG0Y; // Magnify Glass Origin X and Y position
-    private float MGWidth = Screen.width / 5f, MGHeight = Screen.width / 5f; // Magnify glass width and height
+    private float MGOX, MG0Y; 
+    private float MGWidth = Screen.width / 5f, MGHeight = Screen.width / 5f;
     private Vector3 mousePos;
 	private bool cameraActive;
 	private bool canShoot;
@@ -44,15 +44,12 @@ public class scOperatorController : MonoBehaviour
 
 	}
 
-    // Update is called once per frame
     void Update()
     {
-		// Following lines set the camera's pixelRect and camera position at mouse position
 		magnifyCamera.pixelRect = new Rect(Input.mousePosition.x - MGWidth / 2.0f, Input.mousePosition.y - MGHeight / 2.0f, MGWidth, MGHeight);
 		mousePos = getWorldPosition(Input.mousePosition);
 		magnifyCamera.transform.position = mousePos;
 		mousePos.z = 0;
-		//magnifyBorders.transform.position = mousePos;
 		if (Input.GetMouseButtonDown(0) && canShoot && scGameManager.instance.stateGame == 1)
 		{
 			canShoot = false;
@@ -90,7 +87,6 @@ public class scOperatorController : MonoBehaviour
 	// Following method creates MagnifyGlass
 	private void createMagnifyGlass()
 	{
-		//GameObject camera = new GameObject("OperatorCamera");
 		MGOX = Screen.width / 2f - MGWidth / 2f;
 		MG0Y = Screen.height / 2f - MGHeight / 2f;
 		magnifyCamera = GetComponent<Camera>();
@@ -109,7 +105,6 @@ public class scOperatorController : MonoBehaviour
 		}
 	}
 
-	// Following method calculates world's point from screen point as per camera's projection type
 	public Vector3 getWorldPosition(Vector3 screenPos)
 	{
 		Vector3 worldPos;

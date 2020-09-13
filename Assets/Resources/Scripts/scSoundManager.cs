@@ -6,7 +6,6 @@ public class scSoundManager : MonoBehaviour
 {
     public  AudioClip acError, acMuerte, acFire, acWin;
     private AudioSource audioSource;
-    // Start is called before the first frame update
     void Start()
     {
         acError = Resources.Load<AudioClip>("Audios/Error or failed");
@@ -16,7 +15,6 @@ public class scSoundManager : MonoBehaviour
         audioSource = transform.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         

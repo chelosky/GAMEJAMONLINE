@@ -33,7 +33,7 @@ public class scGameManager : MonoBehaviour
     private int numberPerson = 5;
     private int intervalPerson = 5;
 
-    public int stateGame = 0; // 0 --> iniciando | 1 --> jugando | 2 --> lose | 3 --> win
+    public int stateGame = 0;
 
     void Awake()
     {
